@@ -1071,28 +1071,28 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
           <div class="contact-item"><div class="ci-icon">🏛</div><div><div class="ci-lbl">Garantie</div><div class="ci-val">Satisfaction garantie · Photos avant/après</div></div></div>
         </div>
       </div>
-      <div class="form-card">
+      <form class="form-card" action="https://formspree.io/f/mbdvkyyk" method="POST">
         <h3>Demande de devis gratuit</h3>
         <div class="form-row">
-          <div class="form-group"><label>Prénom</label><input type="text" placeholder="Jean"/></div>
-          <div class="form-group"><label>Nom</label><input type="text" placeholder="Dupont"/></div>
+          <div class="form-group"><label>Prénom</label><input type="text" name="prenom" placeholder="Jean"/></div>
+          <div class="form-group"><label>Nom</label><input type="text" name="nom" placeholder="Dupont"/></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="06 XX XX XX XX"/></div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="jean@email.fr"/></div>
+          <div class="form-group"><label>Téléphone</label><input type="tel" name="telephone" placeholder="06 XX XX XX XX"/></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="jean@email.fr"/></div>
         </div>
-        <div class="form-group"><label>Ville / Code postal</label><input type="text" placeholder="Arras – 62000"/></div>
+        <div class="form-group"><label>Ville / Code postal</label><input type="text" name="ville" placeholder="Arras – 62000"/></div>
         <div class="form-group">
           <label>Type de prestation</label>
-          <select><option value="">Sélectionnez...</option><option>Nettoyage toiture</option><option>Nettoyage façade</option><option>Nettoyage terrasse</option><option>Formule Intégrale</option></select>
+          <select name="prestation"><option value="">Sélectionnez...</option><option>Nettoyage toiture</option><option>Nettoyage façade</option><option>Nettoyage terrasse</option><option>Formule Intégrale</option></select>
         </div>
-        <div class="form-group"><label>Votre projet</label><textarea placeholder="Surface, type de matériau, dernière intervention..."></textarea></div>
+        <div class="form-group"><label>Votre projet</label><textarea name="message" placeholder="Surface, type de matériau, dernière intervention..."></textarea></div>
         <div class="form-actions">
           <button type="submit">Envoyer ma demande →</button>
           <span class="form-note">Réponse sous 24h<br>Gratuit · Sans engagement</span>
         </div>
       </form>
-<div id="form-success" style="display:none;background:var(--grey2);border:1px solid rgba(74,158,255,0.3);border-radius:20px;padding:48px 40px;text-align:center;">
+      <div id="form-success" style="display:none;background:var(--grey2);border:1px solid rgba(74,158,255,0.3);border-radius:20px;padding:48px 40px;text-align:center;">
   <div style="font-size:48px;margin-bottom:16px;">✅</div>
   <h3 style="font-size:22px;font-weight:700;color:var(--white);margin-bottom:12px;">Demande envoyée !</h3>
   <p style="font-size:15px;color:var(--white-dim);line-height:1.7;">Nous avons bien reçu votre demande de devis.<br>Nous vous répondons sous 24 heures.</p>
