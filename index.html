@@ -1072,6 +1072,8 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
         </div>
       </div>
       <form class="form-card" action="https://formspree.io/f/mbdvkyyk" method="POST">
+        <input type="hidden" name="_next" value="https://splashnord.fr?merci=1"/>
+        <input type="hidden" name="_subject" value="🔔 Nouvelle demande de devis Splash Nord"/>
         <h3>Demande de devis gratuit</h3>
         <div class="form-row">
           <div class="form-group"><label>Prénom</label><input type="text" name="prenom" placeholder="Jean"/></div>
@@ -1568,40 +1570,8 @@ function closeCookies(choice) {
 
 
 <script>
-// Soumission formulaire Formspree
-const devisForm = document.querySelector('form[action*="formspree"]');
-if (devisForm) {
-  devisForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = devisForm.querySelector('button[type="submit"]');
-    btn.textContent = 'Envoi en cours...';
-    btn.disabled = true;
+// Formulaire Formspree - soumission native
 
-    const formData = new FormData(devisForm);
-
-    try {
-      const res = await fetch('https://formspree.io/f/mbdvkyyk', {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (res.ok) {
-        devisForm.style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-        document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        btn.textContent = 'Envoyer ma demande →';
-        btn.disabled = false;
-        alert('Une erreur est survenue. Veuillez réessayer.');
-      }
-    } catch (err) {
-      btn.textContent = 'Envoyer ma demande →';
-      btn.disabled = false;
-      alert('Une erreur est survenue. Veuillez réessayer.');
-    }
-  });
-}
 </script>
 </body>
 </html>
