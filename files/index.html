@@ -6,8 +6,8 @@
 <title>Splash Nord — Nettoyage Extérieur Professionnel</title>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png"/>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-<meta name="description" content="Splash Nord — Nettoyage professionnel de toitures, façades, terrasses et containers à déchets dans le Nord-Pas-de-Calais. Particuliers et syndics. Devis gratuit sous 24h. Résultat garanti."/>
-<meta name="keywords" content="nettoyage toiture Nord, nettoyage façade Lille, nettoyage terrasse Nord-Pas-de-Calais, démoussage toiture Lille, nettoyage container poubelle Nord, nettoyage toiture Arras, nettoyage toiture Lens, nettoyage toiture Le Touquet, nettoyage toiture Béthune, nettoyage toiture Calais, nettoyage toiture Dunkerque, nettoyage toiture Valenciennes, démoussage toiture Nord-Pas-de-Calais, nettoyage façade copropriété Nord, syndic nettoyage façade Lille"/>
+<meta name="description" content="Splash Nord — Nettoyage professionnel de toitures, façades, terrasses, gouttières et containers à déchets dans le Nord-Pas-de-Calais. Particuliers et syndics. Devis gratuit sous 24h. Résultat garanti."/>
+<meta name="keywords" content="nettoyage toiture Nord, nettoyage façade Lille, nettoyage terrasse Nord-Pas-de-Calais, démoussage toiture Lille, nettoyage container poubelle Nord, nettoyage gouttières Nord, nettoyage gouttière Lille, nettoyage toiture Arras, nettoyage toiture Lens, nettoyage toiture Le Touquet, nettoyage toiture Béthune, nettoyage toiture Calais, nettoyage toiture Dunkerque, nettoyage toiture Valenciennes, démoussage toiture Nord-Pas-de-Calais, nettoyage façade copropriété Nord, syndic nettoyage façade Lille"/>
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Splash Nord"/>
 <link rel="canonical" href="https://www.splashnord.fr/"/>
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.splashnord.fr/"/>
 <meta property="og:title" content="Splash Nord — Nettoyage Toiture, Façade & Terrasse dans le Nord"/>
-<meta property="og:description" content="Nettoyage professionnel de toitures, façades, terrasses et containers dans le Nord-Pas-de-Calais. Particuliers & syndics. Devis gratuit 24h. Résultat garanti."/>
+<meta property="og:description" content="Nettoyage professionnel de toitures, façades, terrasses, gouttières et containers dans le Nord-Pas-de-Calais. Particuliers & syndics. Devis gratuit 24h. Résultat garanti."/>
 <meta property="og:locale" content="fr_FR"/>
 <meta property="og:site_name" content="Splash Nord"/>
 
@@ -277,26 +277,26 @@ h2 em{font-style:normal;color:var(--dim);}
   gap:20px;
   width:100%;
 }
-/* 4 cards de service en 2x2 */
+/* 5 cards de service + card CTA : grille 2 colonnes */
 .services-track .service-card:not(:last-child){
   grid-column:span 1;
 }
-/* Card CTA centré et étiré */
+/* Card CTA à côté de la dernière prestation */
 .services-track .service-card:last-child{
-  grid-column:1/-1;
+  grid-column:span 1;
 }
 .service-cta-card{
   background:var(--blue)!important;
   border-color:var(--blue)!important;
-  grid-column:1/-1;
-  width:60%;
-  margin:0 auto;
+  grid-column:span 1;
+  width:100%;
+  margin:0;
   display:flex!important;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:48px 60px;
+  padding:48px 40px;
   gap:20px;
   box-shadow:0 8px 40px var(--blue-glow);
 }
@@ -573,7 +573,7 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
       "@type": "LocalBusiness",
       "@id": "https://www.splashnord.fr/#business",
       "name": "Splash Nord",
-      "description": "Nettoyage professionnel de toitures, façades, terrasses et containers à déchets dans le Nord-Pas-de-Calais. Particuliers et syndics de copropriété.",
+      "description": "Nettoyage professionnel de toitures, façades, terrasses, gouttières et containers à déchets dans le Nord-Pas-de-Calais. Particuliers et syndics de copropriété.",
       "url": "https://www.splashnord.fr",
       "email": "contact@splashnord.fr",
       "logo": "https://www.splashnord.fr/logo.png",
@@ -637,6 +637,14 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
               "@type": "Service",
               "name": "Nettoyage de containers ménagers",
               "description": "Désinfection et nettoyage de bacs à ordures et containers à déchets pour particuliers et syndics. Abonnement trimestriel ou annuel."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de gouttières",
+              "description": "Curage et nettoyage de gouttières et descentes d'eaux pluviales pour particuliers et syndics dans le Nord-Pas-de-Calais."
             }
           }
         ]
@@ -751,7 +759,7 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
         <div class="kpi-label">Délai de réponse</div>
       </div>
       <div class="hero-kpi">
-        <div class="kpi-val">3</div>
+        <div class="kpi-val">5</div>
         <div class="kpi-label">Spécialités</div>
       </div>
       <div class="hero-kpi">
@@ -771,7 +779,7 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
 <section class="services-section" id="services" aria-label="Nos services de nettoyage extérieur">
   <div class="services-header">
     <div class="eyebrow">Nos prestations</div>
-    <h2>3 spécialités,<br><em>un seul interlocuteur</em></h2>
+    <h2>5 spécialités,<br><em>un seul interlocuteur</em></h2>
   </div>
   <div class="services-track-wrap">
     <div class="services-track" id="servicesTrack">
@@ -818,6 +826,17 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
           <div class="spec-row"><span class="spec-k">Tarif unitaire</span><span class="spec-v">20 € / bac</span></div>
           <div class="spec-row"><span class="spec-k">Passage (2 bacs)</span><span class="spec-v">25 € / trimestre</span></div>
           <div class="spec-row"><span class="spec-k">Forfait annuel</span><span class="spec-v">75 € / an — 1 passage offert</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon"><svg width="46" height="46" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Nettoyage gouttières Nord-Pas-de-Calais"><path d="M6 17 L58 9"/><path d="M8 24 H56 V30 A6 6 0 0 1 50 36 H14 A6 6 0 0 1 8 30 Z"/><path d="M49 36 V54 H56"/><path d="M22 42 C19 46 19 49 22 50 C25 49 25 46 22 42 Z"/><path d="M34 44 C32 47 32 49 34 50 C36 49 36 47 34 44 Z"/></svg></div>
+        <h3>Nettoyage de gouttières</h3>
+        <p>Curage des gouttières et descentes d'eaux pluviales : feuilles, mousses et dépôts retirés pour éviter débordements, infiltrations et dégâts sur vos façades.</p>
+        <div class="service-specs">
+          <div class="spec-row"><span class="spec-k">Matériaux</span><span class="spec-v">Zinc · PVC · Aluminium</span></div>
+          <div class="spec-row"><span class="spec-k">Prestation</span><span class="spec-v">Curage · Rinçage · Contrôle des écoulements</span></div>
+          <div class="spec-row"><span class="spec-k">Fréquence conseillée</span><span class="spec-v">1 à 2 fois par an</span></div>
         </div>
       </div>
       <div class="service-card service-cta-card">
@@ -1015,7 +1034,7 @@ footer{background:var(--grey2);border-top:1px solid var(--border);padding:56px 5
         <div class="form-group"><label>Ville / Code postal</label><input type="text" name="ville" placeholder="Arras – 62000"/></div>
         <div class="form-group">
           <label>Type de prestation</label>
-          <select name="prestation"><option value="">Sélectionnez...</option><option>Nettoyage toiture</option><option>Nettoyage façade</option><option>Nettoyage terrasse</option><option>Nettoyage de containers ménagers</option><option>Formule Intégrale</option><option>Autre demande</option></select>
+          <select name="prestation"><option value="">Sélectionnez...</option><option>Nettoyage toiture</option><option>Nettoyage façade</option><option>Nettoyage terrasse</option><option>Nettoyage de gouttières</option><option>Nettoyage de containers ménagers</option><option>Formule Intégrale</option><option>Autre demande</option></select>
         </div>
         <div class="form-group"><label>Votre projet</label><textarea name="message" placeholder="Surface, type de matériau, dernière intervention..."></textarea></div>
         <div class="form-actions">
