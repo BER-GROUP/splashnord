@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.splashnord.fr/sitemap.xml
+Sitemap: https://splashnord.fr/sitemap.xml
